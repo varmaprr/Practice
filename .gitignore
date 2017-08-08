@@ -1,4 +1,4 @@
 
 .idea
-logback/logback.iml
+**/*.iml
 logback/target/
