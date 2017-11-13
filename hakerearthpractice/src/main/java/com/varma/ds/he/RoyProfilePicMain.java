@@ -1,17 +1,15 @@
-package com.varma.he;
+package com.varma.ds.he;
 
 /* IMPORTANT: Multiple classes and nested static classes are supported */
 //imports for BufferedReader
 
-import javax.sound.midi.SysexMessage;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 //import for Scanner and other utility classes
-import java.util.*;
 
 
- class RoyProfilePicMain {
+class RoyProfilePicMain {
     public static void main(String args[]) throws Exception {
 
         int N = 0;

@@ -1,4 +1,4 @@
-package com.varma.dsbook;
+package com.varma.ds.book;
 
 import java.util.Scanner;
 

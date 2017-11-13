@@ -1,4 +1,4 @@
-package com.varma.he;
+package com.varma.ds.he;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.varma.he;
+package com.varma.ds.he;
 
 /* IMPORTANT: Multiple classes and nested static classes are supported */
 
