@@ -13,6 +13,7 @@
         <module>hiveoozie</module>
         <module>groovydsl</module>
         <module>hakerearthpractice</module>
+        <module>String</module>
     </modules>
 
 </project>
