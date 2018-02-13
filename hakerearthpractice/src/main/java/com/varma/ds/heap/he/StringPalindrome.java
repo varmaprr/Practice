@@ -1,4 +1,4 @@
-package com.varma.ds.he;
+package com.varma.ds.heap.he;
 
 //import for Scanner and other utility classes
 

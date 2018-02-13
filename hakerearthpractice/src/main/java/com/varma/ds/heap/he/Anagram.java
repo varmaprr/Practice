@@ -1,4 +1,4 @@
-package com.varma.ds.he;
+package com.varma.ds.heap.he;
 
 /**
  * Created by varma on 11/2/2017.

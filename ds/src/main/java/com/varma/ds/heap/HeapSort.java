@@ -1,4 +1,4 @@
-package com.varma.ds;
+package com.varma.ds.heap;
 
 import java.util.Arrays;
 
