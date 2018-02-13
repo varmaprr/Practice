@@ -8,13 +8,11 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>datastructures</module>
+        <module>hadoop</module>
+        <module>thread</module>
         <module>logback</module>
-        <module>spark-partitionby</module>
-        <module>hiveoozie</module>
         <module>groovydsl</module>
-        <module>hakerearthpractice</module>
-        <module>ds</module>
-        <module>problems</module>
     </modules>
 
 </project>
