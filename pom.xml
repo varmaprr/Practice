@@ -14,6 +14,7 @@
         <module>groovydsl</module>
         <module>hakerearthpractice</module>
         <module>String</module>
+        <module>problems</module>
     </modules>
 
 </project>
