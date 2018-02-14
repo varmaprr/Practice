@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.varma.hadoop</groupId>
+    <groupId>com.varma</groupId>
     <artifactId>hadoop</artifactId>
     <packaging>pom</packaging>
 
