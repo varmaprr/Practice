@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.varma.datastructures</groupId>
-    <artifactId>datastructures</artifactId>
+    <artifactId>data-structures</artifactId>
     <packaging>pom</packaging>
 
     <modules>
