@@ -11,7 +11,5 @@
 
     <groupId>com.varma.thread</groupId>
     <artifactId>thread</artifactId>
-
-
-
+    <version>1.0-SNAPSHOT</version>
 </project>
