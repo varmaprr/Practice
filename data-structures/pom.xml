@@ -11,6 +11,7 @@
 
     <groupId>com.varma.datastructures</groupId>
     <artifactId>datastructures</artifactId>
+    <packaging>pom</packaging>
 
     <modules>
         <module>ds</module>
