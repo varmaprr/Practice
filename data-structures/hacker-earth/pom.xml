@@ -8,10 +8,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.varma.hackerearth</groupId>
-    <artifactId>hakerearth-practice</artifactId>
+    <artifactId>hacker-earch</artifactId>
     <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
 
-    <name>hakerearth-practice</name>
+    <name>hacker-earth</name>
     <url>http://maven.apache.org</url>
 
     <properties>
