@@ -8,11 +8,24 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>datastructures</module>
+        <module>data-structures</module>
         <module>hadoop</module>
         <module>thread</module>
         <module>logback</module>
-        <module>groovydsl</module>
+        <module>groovy-dsl</module>
     </modules>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
