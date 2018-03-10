@@ -1,4 +1,4 @@
-package com.varma.ds.dp;
+package com.varma.ds.greedy;
 
 import java.util.Arrays;
 
