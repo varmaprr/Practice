@@ -2,6 +2,15 @@ package com.varma.ds.interview;
 
 /**
  * Created by varma on 3/11/2018.
+ * <p>
+ * As expression will be given which can contain open and close parentheses and optionally some alphanumeric characters.
+ * No other operator will be present in the string. You need to remove minimum number of parentheses to make the input string valid.
+ * (A valid) string is one with balanced sets of parenthesis)
+ * if more than one valid output is possible removing same number of parentheses the print all such distinct output patterns.
+ * <p>
+ * Sample Test cases:
+ * Test Case 1 - input - ()())) output - ()(), (())
+ * Test Case 2 - input - (X)())() output - (X)()(), (X())()
  */
 
 import java.util.*;
