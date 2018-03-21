@@ -1,6 +1,7 @@
 package com.varma.ds.interview;
 
 import java.util.concurrent.*;
+import java.util.stream.IntStream;
 
 /**
  * Created by varma on 3/21/2018.
@@ -47,11 +48,12 @@ class Producer implements Runnable {
     public void run() {
         try {
 
-            for (int i = 0; i < 100; i++) {
-                Message mess = new Message();
-                mess.setSequence(i);
-                queue.add(mess);
-                Thread.sleep(100);
+            for (int i = 0; i < 10; i++) {
+                Message message = new Message();
+                message.setSequence(i);
+                message.setUnique_topic(Thread.currentThread().getId() + " " + i);
+                queue.add(message);
+                Thread.sleep(i);
             }
 
         } catch (Exception e) {
@@ -72,7 +74,12 @@ class Consumer implements Runnable {
     public void run() {
 
         try {
-            System.out.println(queue.take());
+            Thread.sleep(1000);
+            Message msg = queue.take();
+            while (msg != null) {
+                System.out.println(msg.toString());
+                msg = queue.take();
+            }
         } catch (Exception e) {
 
         }
@@ -81,20 +88,18 @@ class Consumer implements Runnable {
 
 public class MessageQueue {
 
-    public static void main(String[] args) {
-        BlockingQueue<Message> bq = new ArrayBlockingQueue<Message>(100);
+    public static void main(String[] args) throws Exception {
+        BlockingQueue<Message> bq = new ArrayBlockingQueue(10);
 
         Producer producer = new Producer(bq);
         Consumer consumer = new Consumer(bq);
 
         ExecutorService executorService = Executors.newFixedThreadPool(3);
 
-        executorService.execute(producer);
-        /*executorService.submit(() -> {
-            Producer producer = new Producer(bq);
-        });*/
-        //new Thread(producer).start();
+        IntStream.range(0, 3).forEach(i -> executorService.execute(producer));
+
         new Thread(consumer).start();
+
     }
 
 
