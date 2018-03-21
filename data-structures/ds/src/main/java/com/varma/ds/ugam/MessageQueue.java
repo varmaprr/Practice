@@ -1,6 +1,5 @@
-package com.varma.ds.interview;
+package com.varma.ds.ugam;
 
-import java.util.Calendar;
 import java.util.Random;
 import java.util.concurrent.*;
 import java.util.stream.IntStream;
