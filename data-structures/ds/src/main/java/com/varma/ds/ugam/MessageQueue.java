@@ -29,7 +29,7 @@ class Message {
     public String toString() {
         return "Message with " +
                 "unique_topic='" + unique_topic + '\'' +
-                ", timestamp=" + timestamp ;
+                ", timestamp=" + timestamp;
     }
 }
 
@@ -51,7 +51,7 @@ class Producer implements Runnable {
             String topic;
 
             for (int i = 0; ; i++) {
-                topic = ""+Thread.currentThread().getName() + "_" + i;
+                topic = "" + Thread.currentThread().getName() + "_" + i;
                 queue.add(new Message(topic, System.currentTimeMillis()));
                 Thread.sleep(new Random().nextInt(MAX_INTERVAL));
             }
@@ -75,7 +75,7 @@ class Consumer implements Runnable {
 
         while (true) {
             try {
-                System.out.println("Consumed: "+queue.take().toString());
+                System.out.println("Consumed: " + queue.take().toString());
             } catch (Exception e) {
 
             }
