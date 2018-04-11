@@ -17,17 +17,18 @@ public class CycleInArray {
 
         int size = a.length;
         boolean direction; // true is forward false is backward
-        int steps = 0, i = 0;
-        boolean[] visited = new boolean[a.length];
+        int steps, prev, i = 0;
+        int[] visited = new int[a.length]; //this stories the index of the previous number.
 
         while (i < size) {
             direction = a[i] >= 0 ? true : false;
             steps = a[i] % size;
+            prev = i;
             i = direction ? i + steps : i - steps;
-            if (visited[i] == true) {
+            if (visited[i] == prev) {
                 return true;
             }
-            visited[i] = true;
+            visited[i] = prev;
         }
 
         return false;
