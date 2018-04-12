@@ -8,7 +8,7 @@ public class CycleInArray {
 
     public static void main(String[] args) {
 
-        int[] a = {1, 4, 6, 8, 1, -1};
+        int[] a = {1, 2, 6, 8, 1, -1};
 
         checkCycleInArray(a);
     }
