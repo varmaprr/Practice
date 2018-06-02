@@ -47,7 +47,7 @@ public class PrintTopViewOfTree {
 
             if (n.left != null)
                 qItems.add(new QItem(n.left, hd - 1));
-            else if (n.right != null)
+            if (n.right != null)
                 qItems.add(new QItem(n.right, hd + 1));
         }
     }
