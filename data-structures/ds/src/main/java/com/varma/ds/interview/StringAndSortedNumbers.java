@@ -1,3 +1,5 @@
+package com.varma.ds.interview;
+
 import java.io.BufferedInputStream;
 import java.util.*;
 
@@ -5,7 +7,7 @@ import java.util.*;
  * Created by varma on 4/13/2018.
  * This question was asked in workfusion interview
  */
-public class Problem {
+public class StringAndSortedNumbers {
 
     public static void main(String[] args) {
 
